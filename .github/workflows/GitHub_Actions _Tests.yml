@@ -1,0 +1,13 @@
+name: GitHub Actions Tests
+
+on: 
+    pull_request:
+        branches:
+            - develop
+            - staging
+
+
+jobs:
+    test:
+        name: GitHub Actions Tests
+
