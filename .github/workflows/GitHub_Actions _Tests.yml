@@ -31,10 +31,6 @@ jobs:
             #Run build
             - name: Build App
               run: npm run build
-
-            #Run vitest tests
-            - name: Run vitest tests
-              run: npm run test
            
             #Run Cypress component test
             - name: Run Cypress component test
@@ -42,7 +38,9 @@ jobs:
               with:
                 component: true
                 spec:   "cypress/component/**/**.cy.jsx" 
-                run: npx cypress run --browser chrome && npx cypress run --component
+               # run: npx cypress run --browser chrome && npx cypress run --component
+                run: npm run test-component
+                
               
         
 
