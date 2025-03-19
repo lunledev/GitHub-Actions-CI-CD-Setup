@@ -1,10 +1,10 @@
 name: GitHub Actions Tests
 
 # Trigger workflow on all pull requests.
-on: 
-    pull_request:
-        branches:
-           - develop
+on:
+  pull_request:
+    branches:
+      - develop
 
 
 #Jobs to carry out
