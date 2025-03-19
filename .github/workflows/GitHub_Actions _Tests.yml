@@ -4,7 +4,7 @@ name: GitHub Actions Tests
 on: 
     pull_request:
         branches:
-            - develop
+           - develop
 
 
 #Jobs to carry out
