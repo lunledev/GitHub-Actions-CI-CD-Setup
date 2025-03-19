@@ -33,13 +33,14 @@ jobs:
               run: npm run build
            
             #Run Cypress component test
-            - name: Run Cypress component test
-              uses: cypress-io/github-action@v6
-              with:
-                component: true
-                spec:   "cypress/component/**/**.cy.jsx" 
+           # - name: Run Cypress component test
+            #  uses: cypress-io/github-action@v6
+             # with:
+              #  component: true
+               # spec:   "cypress/component/**/**.cy.jsx" 
                # run: npx cypress run --browser chrome && npx cypress run --component
-                run: npm run test-component
+               # run: npm run test-component
+               run:  npx cypress run --component
                 
               
         
