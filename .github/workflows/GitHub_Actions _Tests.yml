@@ -38,7 +38,8 @@ jobs:
                 component: true
             
             - name: Run Cypress component test2
-              uses: npm run test-component
+              run: npm run test-component
+            
             
         
                 
