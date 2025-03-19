@@ -38,7 +38,7 @@ jobs:
                 component: true
                 spec:   "cypress/component/**/**.cy.jsx" 
                # run: npx cypress run --browser chrome && npx cypress run --component
-                run: npm run test-component
+               # run: npm run test-component
                 
               
         
