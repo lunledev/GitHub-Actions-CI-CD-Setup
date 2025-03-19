@@ -1,10 +1,10 @@
 name: GitHub Actions Tests
 
 # Trigger workflow on all pull requests.
-on:
-  pull_request:
-    branches:
-      - develop
+on: 
+    pull_request:
+        branches:
+            - develop
 
 
 #Jobs to carry out
@@ -30,16 +30,16 @@ jobs:
             
             #Run build
             - name: Build App
-              run: npm run build 
-          #Run Cypress component test
+              run: npm run build
+           
+            #Run Cypress component test
             - name: Run Cypress component test
-            #  uses: cypress-io/github-action@v6
-             # with:
-              #  component: true
-               # spec:   "cypress/component/**/**.cy.jsx" 
+              uses: cypress-io/github-action@v6
+              with:
+                component: true
+                spec:   "cypress/component/**/**.cy.jsx" 
                # run: npx cypress run --browser chrome && npx cypress run --component
-               # run: npm run test-component
-              run:  npx cypress run --component
+                run: npm run test-component
                 
               
         
