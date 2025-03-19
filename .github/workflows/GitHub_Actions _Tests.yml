@@ -35,7 +35,6 @@ jobs:
             - name: Run Cypress component test
               uses: cypress-io/github-action@v6
               with:
-                component: true
                 run: npm run test-component
         
                 
