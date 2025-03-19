@@ -36,7 +36,7 @@ jobs:
               uses: cypress-io/github-action@v6
               with:
                 component: true
-                hashfiles: true
+                command: npm run test-component
             
             - name: Run Cypress component test2
               run: npm run test-component
